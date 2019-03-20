@@ -1,3 +1,5 @@
+![React_app_for_Digia_screenshot](https://user-images.githubusercontent.com/19979333/54678120-2772be00-4b0d-11e9-82c4-6f02f1caadc9.png)
+
 ## About this project
 
 This is a simple single-page app developed with React. The app contains a small signup form and a list of participants.
