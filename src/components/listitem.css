@@ -1,0 +1,141 @@
+/* Edit view */
+
+.edit_form {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 0 16px;
+}
+
+.edit_form div:first-child {
+  display: flex;
+  box-sizing: border-box;
+  width: 75%;
+}
+
+.edit_form div:last-child {
+  display: flex;
+  box-sizing: border-box;
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.edit_form input {
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #eee;
+  font-size: 16px;
+}
+
+.edit_form div:first-child input:first-child {
+  display: flex;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.edit_form div:first-child input:nth-child(2) {
+  display: flex;
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.edit_form div:first-child input:last-child {
+  display: flex;
+  box-sizing: border-box;
+  width: 30%;
+  margin-right: 0;
+}
+
+.edit_form input[type='text'] {
+  background-color: #f7f7f7;
+  color: #555;
+  margin-right: 16px;
+}
+
+.edit_form input[type='button'] {
+  background-color: #eee;
+  color: #07f;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.edit_form input[type='submit'] {
+  background-color: #07f;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Default view */
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+}
+
+.table > div {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  border-bottom: 1px solid #eee;
+  color: #505050;
+  line-height: 24px;
+}
+
+.table div div {
+  display: flex;
+  flex-direction: row;
+}
+
+.table .table_row {
+  display: flex;
+}
+
+.table > div > div:first-child {
+  display: flex;
+  box-sizing: border-box;
+  width: 75%;
+}
+
+.table > div > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.table .table_row div div {
+  padding: 0 24px;
+}
+
+.table .table_row div:first-child div:first-child {
+  display: flex;
+  box-sizing: border-box;
+  width: 26%;
+}
+
+.table .table_row div:first-child div:nth-child(2) {
+  display: flex;
+  box-sizing: border-box;
+  width: 42%;
+}
+
+.table .table_row div:first-child div:last-child {
+  display: flex;
+  box-sizing: border-box;
+  width: 32%;
+  margin-right: 0;
+}
+
+.table > div .icons .icon-edit,
+.table > div .icons .icon-trash {
+  color: #909090;
+  height: 24px;
+  width: 24px;
+  padding: 0 12px;
+}
+
+#item_name {
+  text-transform: capitalize;
+}

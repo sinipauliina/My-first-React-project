@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  padding: 64px 32px 96px 32px;
+}
+
+.main_container {
+  width: 912px;
+}
+
+h1 {
+  color: #757575;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
