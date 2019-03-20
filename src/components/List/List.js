@@ -1,5 +1,5 @@
 import React from 'react'
-import ListItem from './ListItem'
+import ListItem from '../ListItem/ListItem'
 import './list.css'
 
 const headerKeys = {
@@ -20,11 +20,12 @@ class List extends React.Component {
   }
 
   render() {
-    const {participants} = this.props
+    const {participants, editRow, deleteRow} = this.props
     const {sortKey} = this.state
     const sortedParticipants = [...participants].sort((a, b) =>
       a[sortKey].localeCompare(b[sortKey])
     )
+
     return (
       <div className="table">
         <div className="table_header">
@@ -66,8 +67,8 @@ class List extends React.Component {
           <ListItem
             key={x.id}
             participant={x}
-            editRow={this.props.editRow}
-            deleteRow={this.props.deleteRow}
+            editRow={editRow}
+            deleteRow={deleteRow}
           />
         ))}
       </div>

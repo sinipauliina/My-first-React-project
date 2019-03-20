@@ -1,7 +1,7 @@
 import React from 'react'
 
-import AddNew from './AddNew'
-import List from './List'
+import AddNew from '../AddNew/AddNew'
+import List from '../List/List'
 
 import './main.css'
 
@@ -33,12 +33,7 @@ class Main extends React.Component {
   addRow = newParticipant => {
     const {participants} = this.state
 
-    this.setState(
-      {
-        participants: [...participants, newParticipant],
-      },
-      () => console.log('I added!', this.state.participants)
-    )
+    this.setState({participants: [...participants, newParticipant]})
   }
 
   editRow = editedParticipant => {
@@ -46,32 +41,24 @@ class Main extends React.Component {
 
     const index = participants.findIndex(x => x.id === editedParticipant.id)
 
-    this.setState(
-      this.state.participants.splice(index, 1, {
-        name: editedParticipant.name,
-        email: editedParticipant.email,
-        phone: editedParticipant.phone,
-      })
-    )
+    const editedParticipants = [...participants]
+    editedParticipants.splice(index, 1, {
+      name: editedParticipant.name,
+      email: editedParticipant.email,
+      phone: editedParticipant.phone,
+    })
 
-    console.log('I edited! ' + editedParticipant.name)
+    this.setState({
+      participants: editedParticipants,
+    })
   }
 
   deleteRow = id => {
     const {participants} = this.state
 
-    /*const newState = this.state;
-    const index = newState.participants.findIndex(x => x.id === id);
-
-    newState.participants.splice(index, 1);
-
-    this.setState(newState); */
-
     this.setState({
       participants: participants.filter(participant => participant.id !== id),
     })
-
-    console.log('I deleted! ' + id)
   }
 
   render() {

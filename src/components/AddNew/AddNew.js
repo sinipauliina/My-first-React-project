@@ -1,8 +1,8 @@
 import React from 'react'
 
-import {isNameValid} from '../helpers'
-import {isEmailValid} from '../helpers'
-import {isPhoneValid} from '../helpers'
+import {isNameValid} from '../../helpers'
+import {isEmailValid} from '../../helpers'
+import {isPhoneValid} from '../../helpers'
 
 import './addnew.css'
 

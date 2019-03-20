@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 
-import Header from './components/Header';
-import Main from './components/Main';
+import Header from './components/Header/Header'
+import Main from './components/Main/Main'
 
-import './App.css';
+import './App.css'
 
 function App() {
-    return (
-      <div>
-        <Header />
-        <Main />
-      </div>
-    );
+  return (
+    <div>
+      <Header />
+      <Main />
+    </div>
+  )
 }
 
-export default App;
+export default App
