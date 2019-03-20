@@ -1,4 +1,4 @@
-![React_app_for_Digia_screenshot](https://user-images.githubusercontent.com/19979333/54678120-2772be00-4b0d-11e9-82c4-6f02f1caadc9.png)
+![React_app_for_Digia_screenshot](https://user-images.githubusercontent.com/19979333/54678547-08c0f700-4b0e-11e9-83e8-feda81123ed6.png)
 
 ## About this project
 
