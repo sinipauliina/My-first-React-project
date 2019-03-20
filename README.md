@@ -22,7 +22,7 @@ https://www.sinipauliina.com (only in Finnish)
 
 I developed this app because I wanted to become a better React developer, and to prove [I have at least the basic skills in React](https://github.com/digiaonline/docs/tree/master/recruitment/html5).
 
-## Installation
+## Installation and running the app
 
 1. Make sure you have Node 8.10.0 or later on your local development machine.
 2. Download this app from GitHub.
