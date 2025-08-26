@@ -20,7 +20,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Sini Pauliina Kolehmainen  
 kolehmainen.sini@outlook.com  
-https://www.sinipauliina.com (only in Finnish)  
 
 I developed this app because I wanted to become a better React developer, and to prove [I have at least the basic skills in React](https://github.com/digiaonline/docs/tree/master/recruitment/html5).
 
